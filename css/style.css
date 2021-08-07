@@ -1,30 +1,96 @@
 * {
-    margin: 0;              /*마진값 패딩값 초기화 */
-    padding: 0;
-    box-sizing: border-box; 
+    margin: 0;                  /* 마진값 초기화 */
+    padding: 0;                 /* 패딩값 초기화*/
+    box-sizing: border-box;     /* 박스 영역은 테두리까지 지정 */
 }
 
+a {
+    text-decoration: none;  /* 로고 밑줄 제거 */
+}
+
+ul {
+    list-style: none;   /* 메뉴 불릿 기호 없애기 */
+}
+
+/* 전체 홈페이지 영역*/
 #container {
-    margin: 0 auto;
-    width: 1200px;
+    margin: 0 auto;     /* 화면 중앙에 배치 */
+    width: 1200px;      /* 너비 지정 */
 }
 
+/* 헤더 영역 */
 header {
     width: 100%;
-    height: 100px;
-    background-color: blue;
+    height: 120px;
+    background-color:grey; /* 영역 표시를 위하여 색 추가 */
 }
 
+/* 로고 영역 */
 #logo {
     float: left;
     width: 250px;
-    height: 100px;
-    background-color: indigo;
+    height: 120px;
+    line-height: 120px; /* height 값과 같게 만들어서 세로로 중간에 오도록 맞춤 */
+    padding-left: 40px; /* 왼쪽 패딩 지정 */
 }
 
+/* 로고 글씨 설정, 이미지나 다른거로 대체시 삭제*/
+#logo h1 {
+    font-weight:700;
+    font-size: 40px;
+    color: black;
+}
+
+/* 내비게이션 영역 */
 nav {
-    float:right;
-    width: 900px;
-    height: 100px;
-    background-color: green;
+    float: left;
+    width: 55%;
+    height: 60px;
+    background-color:blue;  /* 영역 표시를 위하여 색 추가 */
+}
+
+#menu {
+    height: 60px;
+}
+
+#menu > li {
+    float: left; 
+    position: relative; /* 서브메뉴를 absolute로 만들기 위해 부모 요소를 relative로 지정 */
+}
+
+#menu > li > a {
+    display:block;  
+    color:#fff;
+    font-weight: 600;
+    text-shadow: 0 1px blue;
+    padding: 20px 60px;
+}
+#menu > li > a > span {
+    font-size: 0.5em;   /* 서브메뉴가 있는 항목에 화살표 표시 */
+}
+#menu > li > a:hover {
+    color: #000;    /* 마우스 포인터를 올리면 색상 바뀜 */
+    text-shadow: 0 -1px blue;   /* 글자가 굵어지지 않도록 지정 */
+}
+#menu > li > ul {
+    display: none;  /* 서브 메뉴를 처음에는 감춤 */
+    position: absolute; /* 서브 메뉴 포지셔닝 */
+    width: 165px;
+    background-color: blue; /* 서브 메뉴 배경색 */
+    left: 0;
+    margin: 0;
+}
+#menu > li > ul > li {
+    padding: 10px 10px 10px 45px;   /* 서브메뉴 항목 지정 */
+}
+#menu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+#menu > li:hover > ul {
+    display: block; /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+}
+#menu > li > ul > li > a:hover {
+    color:#f00; /* 마우스 포인터를 올리면 색상 바뀜 */
 }
