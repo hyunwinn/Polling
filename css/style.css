@@ -46,7 +46,7 @@ nav {
     float: left;
     width: 55%;
     height: 60px;
-    background-color:blue;  /* 영역 표시를 위하여 색 추가 */
+    background-color: blue;  /* 영역 표시를 위하여 색 추가 */
 }
 
 #menu {
@@ -65,13 +65,16 @@ nav {
     text-shadow: 0 1px blue;
     padding: 20px 60px;
 }
+
 #menu > li > a > span {
     font-size: 0.5em;   /* 서브메뉴가 있는 항목에 화살표 표시 */
 }
+
 #menu > li > a:hover {
     color: #000;    /* 마우스 포인터를 올리면 색상 바뀜 */
     text-shadow: 0 -1px blue;   /* 글자가 굵어지지 않도록 지정 */
 }
+
 #menu > li > ul {
     display: none;  /* 서브 메뉴를 처음에는 감춤 */
     position: absolute; /* 서브 메뉴 포지셔닝 */
@@ -80,17 +83,82 @@ nav {
     left: 0;
     margin: 0;
 }
+
 #menu > li > ul > li {
     padding: 10px 10px 10px 45px;   /* 서브메뉴 항목 지정 */
 }
+
 #menu > li > ul > li > a {
     font-size: 14px;
     padding: 10px;
-    color: #000;
+    color:white;
 }
+
 #menu > li:hover > ul {
     display: block; /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+    z-index: 10;    /* 다른 영역에 가리지 않게 조절 */
 }
+
 #menu > li > ul > li > a:hover {
-    color:#f00; /* 마우스 포인터를 올리면 색상 바뀜 */
+    color: black; /* 마우스 포인터를 올리면 색상 바뀜 */
 }
+
+#filter {
+    width: 100%;
+    height: 100px;
+    background-color:red;   /* 영역 표시를 위하여 색 추가 */
+}
+
+#slideShow {
+    clear: both;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color:yellow;
+}
+
+#slideShowTitle {
+    float: left;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 100px;
+}
+
+#slideShow ul {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#slideShow ul li {
+    float: left;
+    width: 20%;
+}
+
+#slideShow ul li a span {
+    display: block;
+    margin: 0 auto;
+    width: 115px;
+    height: 198px;
+}
+
+#slideShowImg1{
+    background-image:url('../images/img_slideshow_1.jpg');
+}
+
+#slideShowImg2{
+    background-image:url('../images/img_slideshow_2.jpg');
+}
+
+#slideShowImg3{
+    background-image:url('../images/img_slideshow_3.jpg');
+}
+
+#slideShowImg4{
+    background-image:url('../images/img_slideshow_4.jpg');
+}
+
+#slideShowImg5{
+    background-image:url('../images/img_slideshow_5.jpg');
+}
+
