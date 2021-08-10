@@ -20,9 +20,6 @@ function showSlides(n) {
     }
     
     setTimeout(nextSlide, 2000); // 2초마다 자동으로 다음 슬라이드
-    
-
-
 }
 
 function prevSlide() {

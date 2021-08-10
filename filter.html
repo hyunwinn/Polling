@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <link rel="stylesheet" href="css/filterStyle.css">
+</head>
+<body>
+    <div id="container">
+        <div id="age">
+            <h3>나이</h3>
+            <div id="age_list">
+                <ol id = "ff" value = "1">
+                    <li>10</li>
+                    <li>20</li>
+                    <li>30</li>
+                    <li>40</li>
+                    <li>50</li>
+                    <li>60</li>
+                    <li>70</li>
+                    <li>80+</li>
+                </ul>
+            </div>
+            <input name="slider" id="slider" type="range" min="1" max="8" step="1" value="1">
+        </div>
+        <div id="gender">
+            <h3>성별</h3>
+            <ul>
+                <li><img src="images/man.png"><p>남</p></li>
+                <li><img src="images/woman.png"><p>여</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+</body>
+</html>
