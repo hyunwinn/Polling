@@ -13,19 +13,28 @@
         <header>           <!--홈페이지 로고, 검색창이 있는 헤더-->
             <div id="logo">
                 <a href="homepage.html"> <!--로고를 누르면 홈페이지로 이동-->
-                    <h1>Polling</h1>
+                    <img src="images/logo_polling.png" width="250">
                 </a>
             </div>
             <!--검색창 넣기-->
+            <div id="searchbox">
+                <input type="search" placeholder="Search...">
+                <img src="images/search.png">
+            </div>
         </header>
         <nav>           <!--내비게이션-->
             <ul id="menu">   <!--메뉴창 설정-->
                 <li><a href="#">인물 <span>▼</span></a> <!--서브 메뉴가 있는 인물 탭-->
                     <ul>    <!-- 인물 서브 메뉴-->
+<<<<<<< HEAD
                         <li><a href="p1.html">문재인</a></li>
                         <li><a href="p2.html">홍준표</a></li>
                         
                         
+=======
+                        <li><a href="p1.html">문재인</a></li>   <!--문재인 링크-->
+                        <li><a href="p2.html">홍준표</a></li>   <!--홍준표 링크-->
+>>>>>>> 5f668c8362e1661301d944a34b0f94e0f13f602c
                     </ul>
                 </li>
                 <li><a href="news.html">뉴스</a></li>
@@ -34,6 +43,9 @@
             </ul>
         </nav>
         <div id="filter">   <!--필터/해쉬태그: 지금은 몰라서 비워놓음-->
+            <hr width="100%" color="#D3D3D3" size="15"> <!--회색 구분선-->
+            <hr width="100%" color="black" size="3"> <!--검은색 경계선-->
+            <button id="filter">필터 &rang;</button>
 
         </div>
         <div id="slideShow">    <!--대통령 후보 슬라이드-->
@@ -56,12 +68,58 @@
                 <a href="#"><img src="images/img_slideshow_13.jpg" alt="김정선"></a>
                 <a href="#"><img src="images/img_slideshow_14.jpg" alt="윤홍식"></a>
                 <a href="#"><img src="images/img_slideshow_15.jpg" alt="김민찬"></a>
+                <a href="#"><img src="images/img_slideshow_1.jpg" alt="문재인"></a>
+                <a href="#"><img src="images/img_slideshow_2.jpg" alt="홍준표"></a>
+                <a href="#"><img src="images/img_slideshow_3.jpg" alt="안철수"></a>
+                <a href="#"><img src="images/img_slideshow_4.jpg" alt="유승민"></a> <!--슬라이드 반복을 위해서 추가함-->>
                 <button id="prev">&lang;</button>   <!--뒤로가기 버튼-->
                 <button id="next">&rang;</button>   <!--앞으로가기 버튼-->
             </div>
         </div>
+        <div id="newsArticle">
+            <ul>
+                <li><a href="#">기사 제목 1</a></li>
+                <li><a href="#">기사 제목 2</a></li>
+                <li><a href="#">기사 제목 3</a></li>
+                <li><a href="#">기사 제목 4</a></li>
+                <li><a href="#">기사 제목 5</a></li>
+            </ul>
+        </div>
+        <div id="newsSlideShow">
+            <div id="newsSlide">
+                <li>
+                    <a href="#"><img src="images/news_img_1.jpg"></a>
+                    <a href="#"><h3>진짜 위기때 과연 어떤 모습 보일까?</h3></a>
+                    <a href="#"><p>문재인 대통령을 보면 참 대단하다는 생각이 든다. 정치·경제·사회·외교·남북문제 등 그 어느 것 하나 제대로 굴러가지 못하고 있는 판국에도 특유의 너털웃음과 사람 좋은 미소를 날리며...</p></a>
+                </li>
+                <li>
+                    <a href="#"><img src="#"></a>
+                    <a href="#"><h3>뉴스 제목 2</h3></a>
+                    <a href="#"><p>뉴스 내용 2</p></a>
+                </li>
+                <li>
+                    <a href="#"><img src="#"></a>
+                    <a href="#"><h3>뉴스 제목 3</h3></a>
+                    <a href="#"><p>뉴스 내용 3</p></a>
+                </li>
+            </div>
+            <span id="dot" onclick="currentNewsSlide(0)"></span>
+            <span id="dot" onclick="currentNewsSlide(1)"></span>
+            <span id="dot" onclick="currentNewsSlide(2)"></span>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#"><img src="images/facebook.png" alt="페이스북 아이콘"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="트위터 아이콘"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="인스타 아이콘"></a></li>   
+            </ul>
+            <h4>Made by 조현승 이원석 김도헌</h4>
+            
+        </footer>
     </div>
 
     <script src="js/slideshow.js"></script> <!--slideshow.js 파일을 연결-->
+    <script src="js/popup.js"></script>
+    <script src="js/newsSlideShow.js"></script>
 </body>
 </html>   
