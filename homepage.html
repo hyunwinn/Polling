@@ -38,6 +38,7 @@
         <div id="filter">   <!--필터/해쉬태그: 지금은 몰라서 비워놓음-->
             <hr width="100%" color="#D3D3D3" size="15"> <!--회색 구분선-->
             <hr width="100%" color="black" size="3"> <!--검은색 경계선-->
+            <button id="filter">필터 &rang;</button>
 
         </div>
         <div id="slideShow">    <!--대통령 후보 슬라이드-->
@@ -78,13 +79,40 @@
             </ul>
         </div>
         <div id="newsSlideShow">
-            
+            <div id="newsSlide">
+                <li>
+                    <a href="#"><img src="images/news_img_1.jpg"></a>
+                    <a href="#"><h3>진짜 위기때 과연 어떤 모습 보일까?</h3></a>
+                    <a href="#"><p>문재인 대통령을 보면 참 대단하다는 생각이 든다. 정치·경제·사회·외교·남북문제 등 그 어느 것 하나 제대로 굴러가지 못하고 있는 판국에도 특유의 너털웃음과 사람 좋은 미소를 날리며...</p></a>
+                </li>
+                <li>
+                    <a href="#"><img src="#"></a>
+                    <a href="#"><h3>뉴스 제목 2</h3></a>
+                    <a href="#"><p>뉴스 내용 2</p></a>
+                </li>
+                <li>
+                    <a href="#"><img src="#"></a>
+                    <a href="#"><h3>뉴스 제목 3</h3></a>
+                    <a href="#"><p>뉴스 내용 3</p></a>
+                </li>
+            </div>
+            <span id="dot" onclick="currentNewsSlide(0)"></span>
+            <span id="dot" onclick="currentNewsSlide(1)"></span>
+            <span id="dot" onclick="currentNewsSlide(2)"></span>
         </div>
         <footer>
-
+            <ul>
+                <li><a href="#"><img src="images/facebook.png" alt="페이스북 아이콘"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="트위터 아이콘"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="인스타 아이콘"></a></li>   
+            </ul>
+            <h4>Made by 조현승 이원석 김도헌</h4>
+            
         </footer>
     </div>
 
     <script src="js/slideshow.js"></script> <!--slideshow.js 파일을 연결-->
+    <script src="js/popup.js"></script>
+    <script src="js/newsSlideShow.js"></script>
 </body>
 </html>   
