@@ -27,7 +27,7 @@ function showSlides(n) {
 
 function prevSlide() {
     if(current > 0) current -= 1; // 이전슬라이드로 이동
-    if(current == 0) current = 15; // 반복을 위해 추가함
+    if(current == 0) current = 14; // 반복을 위해 추가함
     showSlides(current);
 }
 
