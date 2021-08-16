@@ -7,7 +7,7 @@ window.onload=function(){
     setInterval(function(){
       slideIndex++;
       showNewsSlides(slideIndex);
-  
+    
     }, sec);
 }
 
